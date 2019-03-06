@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import { connect } from 'react-redux';
+import {
+    ${2:action} as ${2:action}Action,
+} from '${3:path}';
+
+export class ${1:Component} extends Component {
+    state = {}
+    render() {
+        return (
+            ${0}
+        );
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        ${2:action}: () => {
+            dispatch(${2:action}Action());
+        },
+    };
+};
+const mapStateToProps = ({ state }) => ({
+    ${4:prop}: state.${4:prop}
+});
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(${1:Component});
+]]></content>
+<tabTrigger>rrc</tabTrigger>
+</snippet>

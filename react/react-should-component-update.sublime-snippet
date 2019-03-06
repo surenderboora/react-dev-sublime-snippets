@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+shouldComponentUpdate(nextProps, nextState) {
+    ${1}
+}
+]]></content>
+<tabTrigger>rscu</tabTrigger>
+</snippet>

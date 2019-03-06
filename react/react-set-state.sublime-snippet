@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+this.setState((state, props) => {
+    return {${1:prop}: ${2:value}};
+});
+]]></content>
+<tabTrigger>rss</tabTrigger>
+</snippet>

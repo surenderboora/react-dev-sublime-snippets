@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+static getDerivedStateFromProps(props, state) {
+    ${1}
+}
+]]></content>
+<tabTrigger>rgdsfp</tabTrigger>
+</snippet>

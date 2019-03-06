@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+export const ${1:actionCreatorName} = data => {
+    return dispatch => {
+        dispatch(${2:action}IsLoading());
+        return ${3:apiCall}(data).then(response => {
+            if (response.status === -1) {
+                dispatch(${2:action}HasErrored());
+            } else {
+                dispatch(${2:action}Success(response));
+            }
+        });
+    };
+};
+]]></content>
+<tabTrigger>rraa</tabTrigger>
+</snippet>

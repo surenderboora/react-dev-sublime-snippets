@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+const ${1:actionCreatorName} = (data) => {
+    return ({
+        type: ${2:action},
+        payload: {
+            ${3:prop}: data.${4:value}
+        }
+    });
+};
+]]></content>
+<tabTrigger>rrac</tabTrigger>
+</snippet>
